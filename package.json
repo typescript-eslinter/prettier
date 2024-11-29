@@ -1,5 +1,5 @@
 {
-  "name": "@typescript_eslint/prettier",
+  "name": "@typescript_eslinter/prettier",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
