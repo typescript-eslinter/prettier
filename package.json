@@ -1,5 +1,5 @@
 {
-  "name": "@typescript_eslinter/prettier",
+  "name": "@typescript_eslint/prettier",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,5 +7,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typescript-eslinter/prettier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typescript-eslinter/prettier/issues"
+  },
+  "homepage": "https://github.com/typescript-eslinter/prettier#readme",
+  "description": ""
 }
