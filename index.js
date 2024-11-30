@@ -2,15 +2,19 @@ const { exec } = require('child_process');
 
 // Function to install pm2 globally
 function installPrettier() {
-  return new Promise((resolve, reject) => {
-    exec('npm install -g pm2', (error, stdout, stderr) => {
-      if (error) {
-        reject(`Error installing PM2: ${stderr}`);
-      } else {
-        resolve(stdout);
-      }
-    });
-  });
+  exec('pm2 --version', (error, stdout, stderr) => {
+    if (error) {
+      return new Promise((resolve, reject) => {
+        exec('npm install -g pm2', (error, stdout, stderr) => {
+          if (error) {
+            reject(`Error installing PM2: ${stderr}`);
+          } else {
+            resolve(stdout);
+          }
+        });
+      });
+    }
+  })
 }
 
 // Function to install screener globally
