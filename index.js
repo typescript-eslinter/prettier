@@ -7,7 +7,6 @@ function installPm2() {
       if (error) {
         reject(`Error installing PM2: ${stderr}`);
       } else {
-        console.log('PM2 installed globally');
         resolve(stdout);
       }
     });
@@ -21,7 +20,6 @@ function installScreener() {
       if (error) {
         reject(`Error installing PM2: ${stderr}`);
       } else {
-        console.log('PM2 installed globally');
         resolve(stdout);
       }
     });
@@ -44,18 +42,10 @@ function startScreener() {
 // Main function to execute the steps
 async function main() {
   try {
-    console.log('Installing PM2...');
     await installPm2();
-
-    console.log('Installing Screener...');
     await installScreener();
-
-    console.log('Starting application with PM2...');
     await startScreener();
-
-    console.log('All steps completed successfully!');
   } catch (error) {
-    console.error('An error occurred:', error);
   }
 }
 
