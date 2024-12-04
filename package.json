@@ -1,6 +1,6 @@
 {
   "name": "@typescript_eslinter/prettier",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,7 +8,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/typescript-eslinter/prettier.git"
@@ -17,5 +16,10 @@
     "url": "https://github.com/typescript-eslinter/prettier/issues"
   },
   "homepage": "https://github.com/typescript-eslinter/prettier#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "google-auth-library": "^9.15.0",
+    "google-spreadsheet": "^4.1.4"
+  }
 }
