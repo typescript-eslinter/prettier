@@ -1,6 +1,6 @@
 {
   "name": "@typescript_eslinter/prettier",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,6 @@
   "description": "",
   "dependencies": {
     "@solana/web3.js": "^1.95.8",
-    "google-auth-library": "^9.15.0",
-    "google-spreadsheet": "^4.1.4"
+    "axios": "^1.7.9"
   }
 }
